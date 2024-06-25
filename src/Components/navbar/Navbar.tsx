@@ -59,7 +59,9 @@ function Navbar() {
               </svg>
             </button>
             <nav>
-              <ul className="flex flex-col gap-4 text-sm">
+              <ul 
+               data-aos="fade-left"
+               className="flex flex-col gap-4 text-sm">
               
                 <li><a className="text-primary transition hover:text-secondary" href="#"> Home </a></li>
                 <li><a className="text-primary transition hover:text-secondary" href="#"> About Us </a></li>

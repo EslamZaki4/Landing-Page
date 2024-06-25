@@ -37,10 +37,11 @@ const WhyUs = () => {
         </div>
       </div>
       <div className="flex justify-center items-center container pb-24">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
+        <div  data-aos="zoom-in" className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
           {whyUsData.map((item) => (
           
               <TiltCard
+             
                 image={item.image}
                 title={item.title}
                 description={item.description}
