@@ -1,14 +1,14 @@
 import welcomeImage from "../../assets/images/Group 208.png";
 import { SlArrowRight } from "react-icons/sl";
-import Zoom from "react-reveal/Zoom";
+// import Zoom from "react-reveal/Zoom";
 function WelcomeMessage() {
   return (
     <>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-52 w-[100%] my-12 container  ">
-      <Zoom left>
+      
         <img src={welcomeImage} className="w-[544.15px]" alt="welcomeImage" />
-        </Zoom>
-        <Zoom right >
+       
+       
         <div className="mt-10">
           <h4 className="text-secondary text-[20px] ">Welcome Message</h4>
           <h1 className="text-[#524FD5] text-4xl mt-5">
@@ -30,7 +30,7 @@ function WelcomeMessage() {
             <SlArrowRight size={13} color="#FF6F28" />
           </div>
         </div>
-        </Zoom>
+       
       </div>
     </>
   );

@@ -1,4 +1,4 @@
-import Zoom from 'react-reveal/Zoom';
+
 import TiltCard from './TiltCard';
 import qualityImage from '../../../assets/svg/17 quality.svg';
 import certificateImage from '../../../assets/svg/Group (8).svg';
@@ -38,8 +38,8 @@ const WhyUs = () => {
       </div>
       <div className="flex justify-center items-center container pb-24">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
-          {whyUsData.map((item, index) => (
-            <Zoom key={index} top>
+          {whyUsData.map((item) => (
+          
               <TiltCard
                 image={item.image}
                 title={item.title}
@@ -47,7 +47,7 @@ const WhyUs = () => {
                 backgroundColor={item.backgroundColor}
                 activeTitle={item.activeTitle}
               />
-            </Zoom>
+          
           ))}
         </div>
       </div>

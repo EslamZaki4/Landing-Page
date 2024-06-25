@@ -1,4 +1,4 @@
-import Zoom from "react-reveal/Zoom";
+
 import ContactUsForm from "./contactUsComponents/ContactUsForm";
 import Map from "./contactUsComponents/Map";
 function ContactUs() {
@@ -8,10 +8,10 @@ function ContactUs() {
       <div className="container flex flex-col justify-center text-center  gap-4 items-center mb-10">
       </div>
       <div className="mb-24 grid md:grid-cols-2 grid-cols-1 justify-center items-center sm:flex-col container  ">
-        <Zoom left>
+        
         <Map />
-        </Zoom>
-        <Zoom right>
+       
+       
         <div className="rounded-xl z-index bg-[white]  shadow-2xl p-6 pt-10  border w-[100%] lg:w-[100%]  h-auto md:h-[600px]  lg:h-[600px]  ">
           <div className="flex justify-center items-center">
 
@@ -26,7 +26,7 @@ function ContactUs() {
           {/* form */}
           <ContactUsForm />
         </div>
-        </Zoom>
+        
       </div>
       </div>
     </>

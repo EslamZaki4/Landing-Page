@@ -2,7 +2,7 @@ import  { useState } from 'react';
 import Logo from '../../../src/assets/svg/Group 211.svg';
 import { IoSearch } from 'react-icons/io5';
 import { TbWorld } from 'react-icons/tb';
-import Zoom from 'react-reveal/Zoom';
+
 
 function Navbar() {
   const [isDrawerOpen, setDrawerOpen] = useState(false);
@@ -60,14 +60,14 @@ function Navbar() {
             </button>
             <nav>
               <ul className="flex flex-col gap-4 text-sm">
-                <Zoom right >
+              
                 <li><a className="text-primary transition hover:text-secondary" href="#"> Home </a></li>
                 <li><a className="text-primary transition hover:text-secondary" href="#"> About Us </a></li>
                 <li><a className="text-primary transition hover:text-secondary" href="#"> Admissions </a></li>
                 <li><a className="text-primary transition hover:text-secondary" href="#"> Academics </a></li>
                 <li><a className="text-primary transition hover:text-secondary" href="#"> News </a></li>
                 <li><a className="text-primary transition hover:text-secondary" href="#"> Contact Us </a></li>
-                </Zoom>
+                
               </ul>
             </nav>
           </div>

@@ -7,17 +7,16 @@ import App from "./App";
 
 import LoadingScreen from "./Components/loadingScreen/LoadingScreen.tsx";
 
-
 const Main = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 1000);
+    const timer = setTimeout(() => setLoading(false), 2000); 
     return () => clearTimeout(timer);
   }, []);
 
   return (
-  <>
+    <>
       {loading ? (
         <LoadingScreen />
       ) : (
@@ -25,7 +24,7 @@ const Main = () => {
           <App />
         </Suspense>
       )}
-   </>
+    </>
   );
 };
 
