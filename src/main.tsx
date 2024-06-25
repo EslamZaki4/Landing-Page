@@ -1,14 +1,10 @@
 
-import { MantineProvider } from "@mantine/core";
 import ReactDOM from "react-dom/client";
 import  { useEffect, useState, Suspense } from "react";
 import "./i18n";
-import "@mantine/carousel/styles.css";
-import "@mantine/core/styles.css";
-import "@mantine/dates/styles.css";
 import "./index.css";
 import App from "./App";
-import { theme } from "./theme.ts";
+
 import LoadingScreen from "./Components/loadingScreen/LoadingScreen.tsx";
 
 
@@ -21,7 +17,7 @@ const Main = () => {
   }, []);
 
   return (
-    <MantineProvider theme={theme}>
+  <>
       {loading ? (
         <LoadingScreen />
       ) : (
@@ -29,7 +25,7 @@ const Main = () => {
           <App />
         </Suspense>
       )}
-    </MantineProvider>
+   </>
   );
 };
 

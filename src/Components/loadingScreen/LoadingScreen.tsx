@@ -1,10 +1,9 @@
 import Logo from '../../../src/assets/svg/Group 211.svg';
-import {  Center } from "@mantine/core";
 import "./loader.css"
 const LoadingScreen = () => (
-  <Center style={{ height: "100vh" }}>
+  <div  className='flex justify-center items-center' style={{ height: "100vh" }}>
      <img src={Logo} alt="Logo"  className="img-pulse"/>
-  </Center>
+  </div>
 );
 
 export default LoadingScreen;
